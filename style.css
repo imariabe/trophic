@@ -1,0 +1,1370 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    box-sizing: border-box;
+ }
+
+ body{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+ }
+
+ .hove{
+    width: 100%;
+    height: 75px;
+    
+     align-items: center;
+     justify-content: space-around;
+     list-style: none;
+     flex-direction: row;
+     display: flex;
+     background-color:#002349 ;
+     z-index: 100;
+
+  }
+
+
+
+  .hove .ho{
+    margin-left: 98px;
+ 
+    display: flex;
+    
+  }
+
+
+  .hove .ho h2{
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+  }
+
+
+  .hove .ho h2 a{
+    color: white;
+  }
+
+
+
+
+  .no{
+    width: 30%;
+    margin-left: 400px;
+}
+
+  button{
+    width: 50px;
+    height: 40px;
+    background-color: #002349;
+    border-radius: 3px;
+    border-color: yellow;
+    color: #fff;
+    margin-right: 10px;
+  }
+
+
+
+  button .ba{
+    display: inline;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+  }
+
+
+  .ba :hover{
+    background-color: yellow;
+    width: 40px;
+  }
+
+  hr{
+    width: 100%;
+    height: 79px;
+    background-color: yellow;
+    position: fixed;
+
+
+  }
+  
+
+.account{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+ .account a{
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 3px;
+    border: solid 1px var(--myBlue);
+}
+
+ .account a:hover{
+    color: black;
+    background-color: yellowgreen;
+}
+
+
+
+
+
+
+
+
+  .font{
+    margin-left: 88%;
+    font-size: 14px;
+    margin-top: -14px;
+    flex-direction: row;
+  }
+
+  .font i{
+    color: #fff;
+  }
+
+
+  .font i h3{
+    color: #fff;
+    margin-top: -15px;
+   float: right;
+   margin-right: 2px;
+  }
+
+
+
+  .header2{
+    width: 100%;
+    height: 93px;
+    background-color:#002349;
+   
+    z-index: 100;
+    position: fixed;
+
+  }
+
+
+  .header2 .logo{
+  
+    width: 10%;
+    height: 100%;
+    display: flex;
+    margin-left: 120px;
+  }
+
+  .header2 .logo img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+
+  .header2 .mynav{
+    width: 58%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+  .header2 .mynav ul{
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    text-align: right;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-right:-800px;
+    margin-bottom: 120px;
+  }
+
+ .header2 .mynav ul li{
+    list-style: none;
+    display: inline;
+  }
+
+  .header2 .mynav ul li a{
+     text-decoration: none;
+     padding: 5px;
+     position: relative;
+     font-size: 14px;
+     font-weight: bold;
+     color: white;
+     text-align: right;
+  } 
+
+
+  .header2 .mynav ul li a:hover{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+
+  .dropdown{
+    position: relative;
+    display: inline-block;
+  }
+
+
+  .dropbtn{
+    background-color: yellow;
+    color: black;
+    padding: 16px;
+    width: 117px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    flex-direction: row;
+    margin-right: 5px;
+  }
+
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+
+
+  .dropdown-content a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover{
+    background-color: #f1f1f1;
+    color: black;
+  }
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+
+.dropdown:hover .dropbtn{
+  background-color: #002349;
+  color: white;
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+
+
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  /* Hide desktop menu and show hamburger */
+  .header2 .mynav {
+      display: none;
+      
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+      width: 30px;
+      height: 22px;
+      position: absolute;
+      top: 35px;
+      right: 30px;
+  }
+
+  .hamburger div {
+      width: 100%;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+  }
+
+  /* Show the menu when hamburger is clicked */
+  .header2.active .mynav {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: #002349;
+      position: absolute;
+      top: 93px;
+      left: 0;
+      height:290px;
+  }
+  .header2 .logo {
+    margin-left: 0;
+    width: 50%;
+}
+
+
+  .header2 .mynav ul {
+      flex-direction: column;
+      text-align: center;
+      margin-right: 0;
+      margin-bottom:125px;
+  }
+
+  .header2 .mynav ul li {
+      margin: 10px 0;
+  }
+
+  .account {
+      justify-content: center;
+      display: none;
+  }
+
+  .dropdown-content {
+      position: relative;
+      min-width: 100%;
+  }
+}
+
+
+.images{
+  width: 100%;
+  height: 100%;
+}
+
+
+.images .constant{
+  margin-top: 60px;
+  position: absolute;
+  overflow: hidden;
+}
+
+
+
+/* Hero Section Styles */
+.hero-section {
+    background-image: url('images/carousel-3.jpg'); /* Replace with the actual background image */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-wrapper {
+    background-color: rgba(0, 0, 255, 0.7); /* Semi-transparent blue overlay */
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    max-width: 80%;
+}
+
+.hero-wrapper h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-wrapper p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-wrapper a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.hero-wrapper a:hover {
+    background-color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto; /* Adjust height for smaller screens */
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .hero-wrapper {
+        max-width: 95%;
+        padding: 20px;
+    }
+
+    .hero-wrapper h1 {
+        font-size: 2rem;
+    }
+
+    .hero-wrapper p {
+        font-size: 1rem;
+    }
+
+    .hero-wrapper a {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
+
+
+
+.confi-section{
+  background-color: white;
+  width:100% ;
+  height:368px ;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.confi-section img{
+  width: 35%;
+  height: 146%;
+  margin-top: 300px;
+  border-radius: 5px;
+}
+
+.confi-section .our-people {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  height: 100%;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.confi-section .our-people h1{
+  font-size: 40px;
+  width: 100%;
+  color: #002349;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+.confi-section .our-people h2{
+  font-size: 25px;
+  width: 100%;
+  color: red;
+  text-align: center;
+  margin-right: -30px;
+}
+ .confi-section .our-people p{
+  font-size: 20px;
+   color: gray;
+  width: 90%;
+  height: 100%;
+  text-align: left;
+  line-height: 1.6;
+  margin-top: 100px;
+  margin-left: 30px;
+}
+
+.confi-section .our-people p a{
+  font-size: 18px;
+  font-weight: 900;
+  color: gray;
+  text-decoration: none;
+}
+
+.confi-section .our-people p a:hover{
+  color: red;
+}
+
+
+.abi1{
+  flex-direction: column;
+  margin-top: 150px;
+  width: 10%;
+  background-color: orangered;
+  color: black;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+
+.abi1:hover{
+  width: 10%;
+  font-size: 20px;
+  border-radius: 3px;
+  background-color: #002349;
+  color:white ;
+}
+
+
+
+
+
+.main-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+.main-container p{
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+
+.who{
+  height: 90vh;
+  width: 90%;
+  margin-top: 100px;
+  background: url("./images/356216984_6295657280529011_4701179320618946125_n.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: var(--box-shadow);
+  border-radius: 7px;
+}
+
+.who .empty{
+  height: 400px;
+  width: 550px;
+  border: solid 10px #fafafa;
+  position: relative;
+  top: 100px;
+  left: 30px;
+}
+
+.who .text{
+  margin-top: 30px;
+  height: 385px;
+  width: 535px;
+  z-index: 100;
+  position: relative;
+  bottom: 270px;
+  left: 60px;
+  background: rgba(0,0,0,.8);
+}
+
+.who .text h1{
+  color: white;
+  position: relative;
+  animation: who;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  top: 100px;
+}
+
+@keyframes who {
+  0% {left: -500px}
+  100% {left: 10px;}
+}
+
+.who .text span{
+  border: none;
+}
+
+.who .text p{
+  font-size: 15px;
+  padding: 0 40px;
+  color: white;
+  margin-top: 110px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: text;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  text-transform: none;
+}
+
+@keyframes text {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.why{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+  height: 300px;
+  margin-top: 90px;
+  padding: 30px;
+  background-color: #002349;
+  box-shadow: var(--box-shadow);
+}
+
+.why h1{
+  color: white;
+}
+
+.why p{
+  color: white;
+  text-transform: none;
+  text-align: left;
+  padding: 0 30px 0 30px;
+}
+
+
+/* Media queries for mobile screen (up to 768px) */
+@media (max-width: 768px) {
+  .main-container {
+    margin-top: 10px;
+  }
+
+  .who .empty, .who .text {
+    width: 100%;
+    left: 0;
+    padding: 0 15px;
+  }
+
+  .who .text h1, .why h1 {
+    font-size: 20px;
+  }
+
+  .who .text p, .why p {
+    font-size: 14px;
+  }
+
+  .why {
+    padding: 3px;
+    height: 90vh;
+    overflow: hidden;
+  }
+}
+
+
+
+/* Explore section general styles */
+.explore {
+  align-items: center;
+  height: auto; /* Remove fixed height to allow flexibility */
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px; /* Reduce margin for mobile */
+  text-align: center; /* Center content for mobile screens */
+}
+
+/* Heading h3 for mobile */
+.explore h3 {
+  font-size: 18px; /* Slightly smaller font size for mobile */
+  font-weight: lighter;
+  color: orangered;
+  justify-content: space-between;
+  margin-top: 30px; /* Less margin for better spacing */
+}
+
+/* Heading h2 for mobile */
+.explore h2 {
+  font-size: 28px; /* Reduce font size for mobile readability */
+  font-weight: bold;
+  color: black;
+  margin-top: 10px; /* Less margin for compact design */
+}
+
+/* Media queries for mobile screen (up to 768px) */
+@media (max-width: 768px) {
+  .explore {
+    margin-top: 20px; /* Smaller top margin for mobile */
+  }
+
+  .explore h3 {
+    font-size: 16px; /* Smaller font size on mobile */
+  }
+
+  .explore h2 {
+    font-size: 24px; /* Adjust heading size for better readability on small screens */
+  }
+}
+
+
+
+/* .explore2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+
+
+
+
+.explore2 ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 50px;
+  margin-left: 40px;
+}
+
+  
+
+.explore2 ul li{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+ 
+  
+.explore2 ul li img{
+  width: 87%;
+  height: 250px;
+  justify-content: space-around;
+  margin-right: 45px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.explore2 ul li img:hover{
+  transform: scale(1.1);
+}
+
+
+
+
+.explore2 ul li :hover .word{
+  opacity: 1;
+}
+
+
+
+  .word{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    align-items: center;
+    padding-bottom: 100px;
+    margin-right: 1000px;
+    margin-top: -300px;
+    font-size: 17px;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+  }
+
+
+  .word2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    margin-top: -186px;
+    margin-right: 290px;
+    font-size: 17px;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+  }
+   */
+
+/* General styles for wrapper */
+.wrapper {
+  width: 100%;
+  height: auto; /* Allow flexible height for mobile */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; /* Default layout for larger screens */
+  flex-wrap: wrap; /* Allow wrapping of elements on smaller screens */
+  margin: 20px 0; /* Add some spacing around the container */
+}
+
+/* General image container styles */
+.image {
+  width: 300px; /* Reduce image width for smaller screens */
+  position: relative;
+  margin: 15px; /* Add some spacing between the images */
+}
+
+/* Image styling */
+.condo {
+  width: 100%; /* Full width of the container */
+  display: block;
+  margin: auto;
+  border-radius: 6px;
+}
+
+/* Content overlay */
+.content {
+  width: 100%; /* Match the size of the image */
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 1;
+  transition: 0.6s;
+  border-radius: 6px;
+}
+
+/* Text and animation */
+.content .condo2 {
+  font-size: 24px; /* Smaller font size for mobile */
+  color: orangered;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 16px; /* Smaller font size for mobile */
+  color: #fff;
+}
+
+.content > * {
+  transform: translateY(25px);
+  transition: transform 0.6s;
+}
+
+.content:hover > * {
+  transform: translateY(0px);
+}
+
+/* Media queries for mobile screen (up to 768px) */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column; /* Stack the images vertically */
+  }
+
+  .image {
+    width: 90%; /* Take most of the screen width on mobile */
+  }
+
+  .content .condo2 {
+    font-size: 22px; /* Further reduce font size for mobile */
+  }
+
+  .content p {
+    font-size: 14px; /* Further reduce paragraph font size */
+  }
+}
+
+
+
+
+  
+/* General styles for wrapper1 */
+.wrapper1 {
+  width: 100%;
+  height: auto; /* Allow flexible height for mobile */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; /* Default layout for larger screens */
+  flex-wrap: wrap; /* Allow wrapping of elements on smaller screens */
+  margin: 20px 0; /* Add some spacing around the container */
+}
+
+/* General image container styles */
+.image3 {
+  width: 300px; /* Reduce image width for smaller screens */
+  position: relative;
+  margin: 15px; /* Add some spacing between the images */
+}
+
+/* Image styling */
+.condo4 {
+  width: 100%; /* Full width of the container */
+  display: block;
+  margin: auto;
+  border-radius: 6px;
+}
+
+/* Content overlay */
+.content1 {
+  width: 100%; /* Match the size of the image */
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 1;
+  transition: 0.6s;
+  border-radius: 6px;
+}
+
+/* Text and animation */
+.content1 .condo3 {
+  font-size: 24px; /* Smaller font size for mobile */
+  color: orangered;
+  margin-bottom: 10px;
+}
+
+.content1 p {
+  font-size: 16px; /* Smaller font size for mobile */
+  color: #fff;
+}
+
+.content1 > * {
+  transform: translateY(25px);
+  transition: transform 0.6s;
+}
+
+.content1:hover > * {
+  transform: translateY(0px);
+}
+
+/* Media queries for mobile screen (up to 768px) */
+@media (max-width: 768px) {
+  .wrapper1 {
+    flex-direction: column; /* Stack the images vertically */
+  }
+
+  .image3 {
+    width: 90%; /* Take most of the screen width on mobile */
+  }
+
+  .content1 .condo3 {
+    font-size: 22px; /* Further reduce font size for mobile */
+  }
+
+  .content1 p {
+    font-size: 14px; /* Further reduce paragraph font size */
+  }
+}
+
+.explore3{
+  align-items: center;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-top:200px;
+}
+
+
+.explore3 h3{
+  font-size: 23px;
+  font-weight: lighter;
+  color: orangered;
+  justify-content: space-between;
+  margin-top: 50px;
+
+}
+
+
+.explore3 h2{
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  margin-top: 14px;
+
+}
+
+
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+
+  .explore3 {
+    height: auto; /* Let the section adjust its height based on content */
+    margin-top: 100px; /* Reduce top margin for better spacing */
+    padding: 0 20px; /* Add padding for better alignment on small screens */
+  }
+
+  .explore3 h3 {
+    font-size: 18px; /* Reduce font size for smaller screens */
+    margin-top: 30px; /* Adjust top margin */
+  }
+
+  .explore3 h2 {
+    font-size: 28px; /* Reduce font size to fit mobile view */
+    margin-top: 10px; /* Adjust spacing for better flow */
+  }
+}
+
+
+
+
+
+
+.veggies{
+  width: 79%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 86px;
+  margin-top: 118px;
+  gap: 19px;
+  border-radius: 5px;
+  margin-bottom:-30px ;
+}
+
+.veggies .more{
+  width: 47%;
+  height: 120%;
+  background-color: #c8cace;
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.veggies .more img{
+  width: 100%;
+  height: 54%;
+  border-radius: 5px;
+}
+
+
+.veggies .more2{
+width: 97%;
+height: 30%;
+display: flex;
+flex-direction: column;
+margin-top: 2px;
+
+}
+
+.veggies .more3{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction:row ;
+  justify-content: space-between;
+}
+
+ .veggies .more .happy{
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  color: orangered;
+  /* margin-top: 10px; */
+  margin-left: 10px;
+  font-weight: bolder;
+  font-weight: bold;
+}
+
+
+.happy1{
+  font-size: 12px;
+  font-weight: lighter;
+  color: orangered;
+}
+
+
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+
+  .veggies {
+    flex-direction: column; /* Change to column layout for smaller screens */
+    width: 100%;
+    height: auto; /* Adjust height to fit content */
+    margin-left: 0;
+    margin-top: 50px;
+    gap: 10px; /* Reduce gap between items */
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  .veggies .more {
+    width: 90%; /* Adjust width for better fit on mobile */
+    height: auto; /* Let the height adjust to the content */
+    margin-bottom: 20px; /* Add some space below each item */
+  }
+
+  .veggies .more img {
+    width: 100%;
+    height: auto; /* Maintain image aspect ratio */
+    border-radius: 5px;
+  }
+
+  .veggies .more2 {
+    width: 100%;
+    height: auto; /* Let content size adjust dynamically */
+    margin-top: 5px;
+  }
+
+  .veggies .more3 {
+    height: auto; /* Let height adjust */
+    flex-direction: column; /* Stack elements on top of each other */
+    align-items: flex-start; /* Align items to the left */
+    padding-left: 10px;
+  }
+
+  .veggies .more .happy,
+  .happy1 {
+    font-size: 12px; /* Reduce font size */
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .veggies .more p.piece {
+    font-size: 14px; /* Adjust text size */
+    padding: 0 10px; /* Add some padding */
+  }
+}
+
+
+
+
+.veggies .more .piece{
+  color: black;
+  font-size: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  font-weight: normal;
+  padding-left: 10px;
+}
+
+
+
+.veggies .more .more4{
+  color: #727376;
+  font-size: 13px;
+  letter-spacing: 0px;
+  text-align: left;
+  font-weight: normal;
+  padding-left: 10px;
+}
+
+
+
+
+
+.piece:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.veggies1{
+  width: 79%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 86px;
+  margin-top: 118px;
+  gap: 19px;
+  border-radius: 5px;
+  margin-bottom:-30px ;
+}
+
+.veggies1 .more1{
+  width: 47%;
+  height: 120%;
+  background-color: #c8cace;
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.veggies1 .more1 img{
+  width: 100%;
+  height: 54%;
+  border-radius: 5px;
+}
+
+
+.veggies1 .more5{
+width: 97%;
+height: 30%;
+display: flex;
+flex-direction: column;
+margin-top: 2px;
+
+}
+
+.veggies .more6{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction:row ;
+  justify-content: space-between;
+}
+
+ .veggies1 .more1 .happy3{
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  color: orangered;
+  /* margin-top: 10px; */
+  margin-left: 10px;
+  font-weight: bolder;
+  font-weight: bold;
+}
+
+
+.happy2{
+  font-size: 12px;
+  font-weight: lighter;
+  color: orangered;
+  margin-left: 274px;
+  margin-top: -10px;
+}
+
+
+
+
+.veggies1 .more1 .piece1{
+  color: black;
+  font-size: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  font-weight: normal;
+  padding-left: 10px;
+}
+
+
+
+.veggies1 .more1 .more4{
+  color: #727376;
+  font-size: 13px;
+  letter-spacing: 0px;
+  text-align: left;
+  font-weight: normal;
+  padding-left: 10px;
+}
+
+
+
+
+
+.piece1:hover{
+  text-decoration: underline;
+}
+
+
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+
+  .veggies1 {
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Ensure full width on mobile */
+    height: auto; /* Let height adjust based on content */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 50px; /* Reduce margin for better spacing */
+    gap: 20px; /* Add space between course items */
+    align-items: center;
+  }
+
+  .veggies1 .more1 {
+    width: 90%; /* Adjust width to fit mobile screen */
+    height: auto; /* Allow the height to adapt to content */
+    margin-bottom: 20px; /* Add spacing between each course */
+  }
+
+  .veggies1 .more1 img {
+    width: 100%; /* Keep image full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+  }
+
+  .veggies1 .more5 {
+    width: 100%; /* Make sure the description fits the container */
+    height: auto; /* Allow height to adjust based on content */
+    margin-top: 10px;
+  }
+
+  .veggies1 .more6 {
+    flex-direction: column; /* Stack the student and duration text */
+    align-items: flex-start; /* Align to the left */
+    padding-left: 10px;
+  }
+
+  .veggies1 .happy3,
+  .happy2 {
+    font-size: 12px; /* Reduce font size for mobile */
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .happy2 {
+    margin-top: 0; /* Remove negative margin */
+  }
+
+  .veggies1 .more1 .piece1 {
+    font-size: 16px; /* Reduce the text size */
+    padding-left: 10px;
+    text-align: left;
+  }
+}
+
+
+
+.calabar{
+  width: 100%;
+  height: 90vh;
+  margin-top: 170px;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+
+}
+
+
+.calabar img{
+  width: 100%;
+  height: 80vh;
+}
+

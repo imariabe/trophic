@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    box-sizing: border-box;
+ }
+ 
+ :root{
+    --green: #27ae60;
+    --myBlue: #192a56;
+    --light-color: #666;
+    --orange: #ffa500;
+    --boxShadow: 5px 5px 5px rgba(199, 192, 192, 0.1);
+  }
+
+ body{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+ }
+ .header2{
+    width: 100%;
+    height: 93px;
+    background-color:#002349;
+   
+    z-index: 100;
+    position: fixed;
+
+  }
+
+
+  .header2 .logo{
+  
+    width: 10%;
+    height: 100%;
+    display: flex;
+    margin-left: 120px;
+  }
+
+  .header2 .logo img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+
+  .header2 .mynav{
+    width: 58%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+  .header2 .mynav ul{
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    text-align: right;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-right:-800px;
+    margin-bottom: 120px;
+  }
+
+ .header2 .mynav ul li{
+    list-style: none;
+    display: inline;
+  }
+
+  .header2 .mynav ul li a{
+     text-decoration: none;
+     padding: 5px;
+     position: relative;
+     font-size: 14px;
+     font-weight: bold;
+     color: white;
+     text-align: right;
+  } 
+
+
+  .header2 .mynav ul li a:hover{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+
+  .dropdown{
+    position: relative;
+    display: inline-block;
+  }
+
+
+  .dropbtn{
+    background-color: yellow;
+    color: black;
+    padding: 16px;
+    width: 117px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    flex-direction: row;
+    margin-right: 5px;
+  }
+
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+
+
+  .dropdown-content a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover{
+    background-color: #f1f1f1;
+    color: black;
+  }
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+
+.dropdown:hover .dropbtn{
+  background-color: #002349;
+  color: white;
+}
+.account{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+ .account a{
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 3px;
+    border: solid 1px var(--myBlue);
+}
+
+ .account a:hover{
+    color: black;
+    background-color: yellowgreen;
+}
+
+article{
+    margin-top: 10%;
+    width: 100%;
+    height: 100%;
+}
+article .back{
+  position: absolute;
+  top: 10%;
+  z-index: -5;
+  width: 100%;
+  height: 100%;
+}
+article .back img {
+  width: 100%;
+  height: 100%;
+}
+article .content{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+article .content .left{
+    display: flex;
+    flex-direction: row;
+}
+article .content .logo{
+    width: 200px;
+    height: 100px;
+    margin-top: 5px;
+}
+
+article .content .left .logo img {
+    width: 100%;
+    width: 100%;
+}
+
+article .content .left .headline {
+    height: 70% ;
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 110px;
+    color: #192a56;
+    padding: 20px;
+    gap: 70px;
+   
+}
+article .content .headline h1{
+    font-size: 48px;
+}
+article .content .headline p{
+    margin-top: 10px;
+    color: rgb(65, 62, 62);
+}
+article .content .right{
+    display: flex;
+    width: 500px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 200px;
+}
+article .content .right .topics{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+    gap: 25px;
+    background-color: rgba(150, 163, 221, 0.212);
+    
+}
+article .content .right .topics p a{
+    text-decoration: none;
+    color: #1a1313;
+}
+article section{
+  width: 98%;
+  height: 500px;
+  background-color: #002349;
+  margin-left: 1%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+article section .headlines{
+  width: 70%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+article section .headlines .head1,.head2{
+  width: 900px;
+  height: 200px;
+  padding: 50px;
+  background-color: #192a56;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+article section .headlines .head1 p,.head2 p{
+  margin-left: 50px;
+}
+article section .popular{
+  width: 400px;
+  margin-right: 0px;
+}
+article section .popular .Article{
+  width: 100%;
+  height: 200px;
+  gap: 50px;
+  margin-top: 30px;
+  background-color: #192a56;
+  color: #000;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+}
+article section .popular .Article p a{
+  text-decoration: none;
+  color: #000;
+}
+article section .popular .newsLetter{
+  width: 100%;
+  height: 200px;
+  gap: 50px;
+  margin-top: 60px;
+  background-color: #192a56;
+  color: #000;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+}
+article section .popular .newsLetter input{
+  padding: 15px;
+  border-radius: 5px;
+}
+article section .popular .newsLetter button{
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 800;
+  background-color: yellow;
+  border: none;
+}
+
+footer {
+  background-color: #1e73be;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 70px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+footer .footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+footer .contact-info p {
+  margin: 5px 0;
+}
+
+footer .social-media-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+footer .social-media-icons a:hover {
+  color: #ccc;
+}

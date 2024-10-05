@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="./images/xample.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="shortcut icon" href="images/brainlogo.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <script src="https://kit.fontawesome.com/76d27a89aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+
+
+
+    <header class="header2">
+        <div class="logo">
+            <img src="images/ttt.jpg" alt="">
+    </div>
+    <nav class="mynav">
+        <ul>
+        <li><a href="./index.html">HOME </a></li>
+        <li><a href="./courses.html">COURSES</a></li>
+        <li><a href="./promo.html">PROMOS</a></li>
+        <li><a href="./aboutus.html">ABOUT US</a></li>
+        <li><a href="./news.html">NEWS </a></li>
+       <div class="dropdown">
+        <button class="dropbtn"><i class="fa fa-book-open mr-2">SUBJECT</i></button>
+        <div class="dropdown-content">
+            <a href="#">Web Design</a>
+            <a href="#">Web Developement</a>
+            <a href="#">Graphic Design</a>
+            <a href="#">UI/UX</a>
+            <a href="#">Web Testing</a>
+            <a href="#">Data Analysis</a>
+            <a href="#">Cyber Security</a>
+            <a href="#">Web Hosting</a>
+        </div>
+       </div>
+ 
+
+        
+
+       <div class="account">
+        <a href="./login.html">Login</a>
+        <a href="./register.html">Sign up</a>
+    </div>
+        </ul>
+       
+    </nav>
+    </header>
+
+
+
+
+    <!--<div id="confi"></div>-->
+    
+    <section>
+        <form action="" method="post" enctype="multipart/form-data">
+            <div class="logo">
+                <h1>log in</h1>
+                <img src="./images/xample.jpg" alt="">
+            </div>
+            <p class="old">Don't have an account? <a href="./register.html">Sign Up here</a></p>
+
+
+            <div class="text">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" placeholder="username">
+            </div>
+
+            <div class="text">
+                <i class="fa-sharp fa-solid fa-lock"></i>
+                <input type="password" placeholder="password" id="security-key">
+                <span>
+                    <img src="./images/eye-solid.svg" alt="" id="toggle" onclick="ShowHide()">
+                </span>
+            </div>
+            
+            <button class="Create">Log in</button>
+        </form>
+    </section>
+
+
+
+    
+</body>
+<script src="./Next step.js"></script>
+</html>
