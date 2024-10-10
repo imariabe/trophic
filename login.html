@@ -59,31 +59,24 @@
 
     <!--<div id="confi"></div>-->
     
-    <section>
-        <form action="" method="post" enctype="multipart/form-data">
-            <div class="logo">
-                <h1>log in</h1>
-                <img src="./images/xample.jpg" alt="">
-            </div>
-            <p class="old">Don't have an account? <a href="./register.html">Sign Up here</a></p>
-
-
-            <div class="text">
-                <i class="fa-regular fa-user"></i>
-                <input type="text" placeholder="username">
-            </div>
-
-            <div class="text">
-                <i class="fa-sharp fa-solid fa-lock"></i>
-                <input type="password" placeholder="password" id="security-key">
-                <span>
-                    <img src="./images/eye-solid.svg" alt="" id="toggle" onclick="ShowHide()">
-                </span>
-            </div>
-            
-            <button class="Create">Log in</button>
+    <div class="signup-form">
+        <h2>BECOME A MEMBER</h2>
+        <p>Get instant access to 4500 video courses</p>
+        <form>
+            <input type="text" placeholder="First name" required>
+            <input type="text" placeholder="Last name" required>
+            <input type="email" placeholder="Email Address" required>
+            <select required>
+                <option value="">Select Learning Program</option>
+                <option value="web-dev">Web Development</option>
+                <option value="data-science">Data Science</option>
+                <option value="design">Graphic Design</option>
+                <!-- Add more options as needed -->
+            </select>
+            <textarea placeholder="Tell us about your learning goals" required></textarea>
+            <button type="submit">START LEARNING</button>
         </form>
-    </section>
+    </div>
 
 
 
