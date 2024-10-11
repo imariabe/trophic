@@ -419,12 +419,13 @@
   margin: 50px auto;
   border-radius: 6px;
   margin-right: 10px;
-  margin-bottom: -85px;
+  margin-bottom: -200px;
 }
 .signup-form h2 {
   margin-top: 0;
   color: #000;
-  font-size: 24px;
+  font-size: 28px;
+  
 }
 .signup-form p {
   color: #000;
@@ -1439,7 +1440,7 @@ margin-top: 2px;
 
 
 
-.calabar{
+/* .calabar{
   width: 100%;
   height: 90vh;
   margin-top: 170px;
@@ -1453,5 +1454,70 @@ margin-top: 2px;
 .calabar img{
   width: 100%;
   height: 80vh;
+} */
+
+/* Existing Styles for Desktop */
+.stats-section {
+  background-color: #f8cf56; /* Yellow background */
+  padding: 40px 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
 }
 
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  color: white; /* White text color */
+}
+
+.stat-item .emoji {
+  font-size: 36px;
+  margin-right: 15px; /* Adds space between emoji and text */
+}
+
+.stat-content {
+  text-align: left;
+}
+
+.stat-content .count {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.stat-content p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+/* Mobile Screen Styles */
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .stat-item {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .stat-item .emoji {
+    font-size: 32px; /* Slightly smaller emoji for mobile */
+    margin-right: 10px;
+  }
+
+  .stat-content .count {
+    font-size: 28px; /* Smaller font size for mobile */
+  }
+
+  .stat-content p {
+    font-size: 16px;
+  }
+}
