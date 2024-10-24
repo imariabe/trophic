@@ -527,7 +527,6 @@ button {
 button:hover {
   background-color: #333;
 }
-
 @media (max-width: 768px) {
   .container5 {
     flex-direction: column;
@@ -537,56 +536,79 @@ button:hover {
   .left-section {
     width: 100%;
     padding: 10px;
-    height: auto; /* Set auto height so it adjusts based on content */
+    height: auto; /* Let content adjust naturally */
     margin-bottom: 20px;
+    position: relative;
   }
 
   .right-section {
     width: 100%;
     padding: 10px;
-    height: auto; /* Set auto height to allow the form to fully display */
+    height: auto; /* Ensure the form adapts */
   }
 
   .form-container {
-    width: 100%; /* Full width on mobile */
-    max-width: 90%; /* Prevent the form from stretching too wide */
+    width: 100%;
+    max-width: 90%; /* Form takes 90% of screen width */
     margin: 0 auto;
   }
 
   .form-group {
     flex-direction: column;
-    width: 100%; /* Full width of each form group */
+    width: 100%;
   }
 
   input, select, textarea {
     font-size: 1rem;
     padding: 8px;
-    width: 100%; /* Ensure full-width form fields */
+    width: 100%;
     box-sizing: border-box;
   }
 
   button {
     padding: 12px;
     font-size: 1.1rem;
-    width: 100%; /* Make the button full width */
+    width: 100%; /* Full-width button */
   }
 
-  /* Adjust the heading and text for better spacing */
+  /* Hero section adjustments */
+  .hero-section {
+    padding: 20px 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background for text readability */
+    min-height: 100vh; /* Make hero section full height of the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+  }
+
+  /* Hero image */
+  .hero-image {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Text content inside hero section */
   .text-content h1 {
-    font-size: 9px; /* Larger font for better readability */
+    font-size: 1.8rem; /* Slightly larger font */
+    line-height: 1.3;
+    margin: 0;
   }
 
   .text-content p {
-    font-size:7px;
+    font-size: 1.2rem;
+    line-height: 1.4;
   }
-  
-  .hero-image {
-    opacity: 0.8; /* Add slight opacity to the image */
-    max-width: 100%;
-    height: auto; /* Adjust the image height on mobile */
+
+  .text-content {
+    padding: 20px;
+  }
+
+  /* Add margin-top to ensure better spacing */
+  .right-section {
+    margin-top: 20px;
   }
 }
-
 
 
 .confi-section{
