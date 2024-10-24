@@ -527,6 +527,7 @@ button {
 button:hover {
   background-color: #333;
 }
+
 @media (max-width: 768px) {
   .container5 {
     flex-direction: column;
@@ -536,66 +537,56 @@ button:hover {
   .left-section {
     width: 100%;
     padding: 10px;
-    height: auto; /* Auto height so the content adjusts properly */
+    height: auto; /* Set auto height so it adjusts based on content */
     margin-bottom: 20px;
-    position: relative;
   }
 
   .right-section {
     width: 100%;
     padding: 10px;
-    height: auto; /* Auto height to ensure form displays properly */
+    height: auto; /* Set auto height to allow the form to fully display */
   }
 
   .form-container {
-    width: 100%;
-    max-width: 90%; /* Adjust form width for mobile screens */
+    width: 100%; /* Full width on mobile */
+    max-width: 90%; /* Prevent the form from stretching too wide */
     margin: 0 auto;
   }
 
   .form-group {
     flex-direction: column;
-    width: 100%;
+    width: 100%; /* Full width of each form group */
   }
 
   input, select, textarea {
     font-size: 1rem;
     padding: 8px;
-    width: 100%; /* Make form inputs full width */
+    width: 100%; /* Ensure full-width form fields */
     box-sizing: border-box;
   }
 
   button {
     padding: 12px;
     font-size: 1.1rem;
-    width: 100%; /* Full-width button */
+    width: 100%; /* Make the button full width */
   }
 
-  /* Adjust heading and paragraph for visibility */
+  /* Adjust the heading and text for better spacing */
   .text-content h1 {
-    font-size: 1.5rem; /* Larger font for better readability */
-    line-height: 1.4; /* Add line spacing to prevent overlap */
-    margin-top: 10px;
+    font-size: 1.3rem; /* Larger font for better readability */
   }
 
   .text-content p {
     font-size: 1rem;
-    line-height: 1.4;
   }
-
-  /* Hero image adjustments for visibility */
+  
   .hero-image {
-    opacity: 0.8; /* Keep slight opacity */
-    max-width: 100%; /* Full width on mobile */
-    height: auto; /* Auto height to fit screen */
-  }
-
-  /* Ensure that the hero section text is fully visible */
-  .hero-section {
-    padding: 20px 10px;
-    background-color: rgba(0, 0, 0, 0.5); /* Add a slight background for readability */
+    opacity: 0.8; /* Add slight opacity to the image */
+    max-width: 100%;
+    height: auto; /* Adjust the image height on mobile */
   }
 }
+
 
 
 .confi-section{
