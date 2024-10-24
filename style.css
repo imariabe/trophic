@@ -573,9 +573,9 @@ button:hover {
 
   /* Adjust the heading and text for better spacing */
   .text-content h1 {
-    font-size: 1.4rem; /* Larger font for better readability */
+    font-size: 1rem; /* Larger font for better readability */
     line-height: 1.2;  /* Adjust line spacing */
-    margin-top: 14px;
+    margin-top: 33px;
   }
 
   .text-content p {
