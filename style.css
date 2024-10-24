@@ -573,11 +573,11 @@ button:hover {
 
   /* Adjust the heading and text for better spacing */
   .text-content h1 {
-    font-size: 1.3rem; /* Larger font for better readability */
+    font-size: 9px; /* Larger font for better readability */
   }
 
   .text-content p {
-    font-size: 1rem;
+    font-size:7px;
   }
   
   .hero-image {
