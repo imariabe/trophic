@@ -537,20 +537,22 @@ button:hover {
   .left-section {
     width: 100%;
     padding: 10px;
-    height: 200px; /* Set auto height so it adjusts based on content */
+    height: 150px; /* Set auto height so it adjusts based on content */
    margin-top: 20px;
   }
 
   .right-section {
     width: 100%;
     padding: 10px;
-    height: 200px; /* Set auto height to allow the form to fully display */
+    height: 150px; /* Set auto height to allow the form to fully display */
   }
 
   .form-container {
     width: 100%; /* Full width on mobile */
     max-width: 90%; /* Prevent the form from stretching too wide */
     margin: 0 auto;
+    min-height: auto;
+ 
   }
 
   .form-group {
@@ -795,7 +797,7 @@ button:hover {
 /* Media queries for mobile screen (up to 768px) */
 @media (max-width: 768px) {
   .main-container {
-    margin-top:40px;
+    margin-top:200px;
   }
 
   .who .empty, .who .text {
